@@ -27,7 +27,7 @@ public class AppointmentController {
     // Lists all doctors. Optionally filter by specialty via query param.
     // Example: GET /doctors?specialty=Cardiology
     // =========================================================
-    @GetMapping("/doctors")
+    @GetMapping("/avaliable-doctors") // Rahul - slight change from /doctors to /avaliable-doctors
     public ResponseEntity<List<Doctor>> getDoctors(
             @RequestParam(required = false) String specialty) {
 
