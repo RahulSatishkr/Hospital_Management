@@ -7,5 +7,7 @@ import java.util.List;
 
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
+
+    // Finds all doctors whose specialty matches the given string (case-insensitive)
     List<Doctor> findBySpecialtyIgnoreCase(String specialty);
 }
