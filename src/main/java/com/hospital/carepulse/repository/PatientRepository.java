@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, Long> {
-    // JpaRepository provides all standard CRUD operations out of the box:
-    // findById, findAll, save, deleteById, existsById, etc.
 }
